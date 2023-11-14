@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ff66b2; /* Vibrant pink background color */
+}
+
+#circle, #sunflower, #message-container {
+  position: absolute;
+  display: none;
+}
+
+#circle {
+  width: 100px;
+  height: 100px;
+  background-color: #fff; /* White circle */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#sunflower {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #ffcc29; /* Yellow color for sunflower petals */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#message-container {
+  background-color: rgba(255, 102, 178, 0.8); /* Semi-transparent pink background for the message */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#message {
+  color: #fff; /* White text color for the message */
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
